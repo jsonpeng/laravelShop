@@ -1,0 +1,23 @@
+<!-- Name Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('name', 'Name:') !!}
+    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Des Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('des', 'Des:') !!}
+    {!! Form::text('des', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Time Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('time', 'Time:') !!}
+    {!! Form::text('time', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Submit Field -->
+<div class="form-group col-sm-12">
+    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('refundLogs.index') !!}" class="btn btn-default">Cancel</a>
+</div>
